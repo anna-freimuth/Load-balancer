@@ -5,7 +5,7 @@ public class Main {
     static final int SIMULTANEOUS_CONNECTION_NUMBER = 20;
     static final int CONNECTION_NUMBER = 1000;
     static final int MESSAGES_PER_CONNECTION = 1000;
-    static final String MESSAGE = "I love you";
+    static final String MESSAGE = "Hello";
 
     static final String GATEWAY_HOST = "localhost";
     static final int GATEWAY_TCP_PORT = 3000;
