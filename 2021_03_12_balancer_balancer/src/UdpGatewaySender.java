@@ -1,17 +1,17 @@
+import server.IServerMap;
 import server.ServerData;
-import server.ServerMap;
 
 import java.io.IOException;
 import java.net.*;
 
 public class UdpGatewaySender implements Runnable {
-    private String host;
-    private ServerMap serverMap;
-    private int udpToGatewayPort;
-    private int periodMillis;
+    private final String host;
+    private final IServerMap serverMap;
+    private final int udpToGatewayPort;
+    private final int periodMillis;
 
 
-    public UdpGatewaySender(String host, ServerMap serverMap, int udpToGatewayPort, int periodMillis) {
+    public UdpGatewaySender(String host, IServerMap serverMap, int udpToGatewayPort, int periodMillis) {
         this.host = host;
         this.serverMap = serverMap;
         this.udpToGatewayPort = udpToGatewayPort;

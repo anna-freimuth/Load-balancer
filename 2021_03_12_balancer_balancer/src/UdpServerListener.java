@@ -1,6 +1,5 @@
+import server.IServerMap;
 import server.ServerData;
-import server.ServerMap;
-;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -9,10 +8,10 @@ import java.net.SocketException;
 
 public class UdpServerListener implements Runnable {
     private static final int PACKET_SIZE = 1024;
-    ServerMap serverMap;
+    IServerMap serverMap;
     int udpFromServerPort;
 
-    public UdpServerListener(ServerMap serverMap, int udpFromServerPort) {
+    public UdpServerListener(IServerMap serverMap, int udpFromServerPort) {
         this.serverMap = serverMap;
         this.udpFromServerPort = udpFromServerPort;
     }
