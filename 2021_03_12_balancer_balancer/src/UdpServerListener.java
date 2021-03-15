@@ -48,6 +48,8 @@ public class UdpServerListener implements Runnable {
         // required for testing with netcat
         line = line.replaceAll("\n", "").replaceAll("\r", "");
 
+        System.out.println(line); //Debug
+
         String[] parts = line.split(":");
         String host = parts[0];
         int port = Integer.parseInt(parts[1]);
