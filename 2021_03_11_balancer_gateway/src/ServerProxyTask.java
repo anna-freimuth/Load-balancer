@@ -37,8 +37,8 @@ public class ServerProxyTask implements Runnable {
         // proxying to the best server
         try (PrintStream toClient = new PrintStream(socket.getOutputStream());
              BufferedReader fromClient = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-             PrintStream toServer = new PrintStream(socket.getOutputStream());
-             BufferedReader fromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+             PrintStream toServer = new PrintStream(socketToServer.getOutputStream());
+             BufferedReader fromServer = new BufferedReader(new InputStreamReader(socketToServer.getInputStream()));
         ) {
             String lineFromClient;
 
