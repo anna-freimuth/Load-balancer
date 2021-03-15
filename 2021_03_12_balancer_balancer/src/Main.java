@@ -7,7 +7,7 @@ public class Main {
     private static final String DEFAULT_PROPS_PATH = "2021_03_12_balancer_balancer/src/config/application.props";
     private static final String UDP_FROM_SERVER_PORT_KEY = "udp.server.port";
     private static final String UDP_TO_GATEWAY_PORT_KEY = "udp.gateway.port";
-    private static final String UDP_GATEWAY_HOST = "172.20.40.68";
+    private static final String UDP_GATEWAY_HOST = "localhost";
 
     public static void main(String[] args) throws IOException {
         String propsPath = args.length > 0 ? args[0] : DEFAULT_PROPS_PATH;

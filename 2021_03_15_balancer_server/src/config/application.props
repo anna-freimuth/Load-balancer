@@ -1,0 +1,4 @@
+balancer.host=localhost
+server.host=localhost
+udp.balancer.port=4000
+load.time.interval=100
