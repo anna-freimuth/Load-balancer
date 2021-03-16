@@ -9,9 +9,10 @@ public class ServerData {
     private int load;
     private final LocalDateTime timeLastUpdate = LocalDateTime.now();
 
-    public ServerData(String host, int port) {
+    public ServerData(String host, int port, int load) {
         this.host = host;
         this.port = port;
+        this.load = load;
     }
 
     public String getHost() {

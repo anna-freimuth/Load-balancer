@@ -1,4 +1,5 @@
-import server.ServerMap;
+import server.ServerList;
+
 
 import java.io.IOException;
 
@@ -15,7 +16,7 @@ public class Main {
 
         int udpServerPort = Integer.parseInt(properties.getProperty(UDP_FROM_SERVER_PORT_KEY));
 
-        ServerMap serverMap = new ServerMap();
+        ServerList serverMap = new ServerList();
         UdpServerListener udpServerListener = new UdpServerListener(serverMap, udpServerPort);
         new Thread(udpServerListener).start();
 

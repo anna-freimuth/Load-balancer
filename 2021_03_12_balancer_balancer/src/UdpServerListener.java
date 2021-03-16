@@ -55,7 +55,7 @@ public class UdpServerListener implements Runnable {
         int port = Integer.parseInt(parts[1]);
         int load = Integer.parseInt(parts[2]);
 
-        ServerData data = new ServerData(host, port);
-        serverMap.update(data, load);
+        ServerData data = new ServerData(host, port,load);
+        serverMap.update(data);
     }
 }

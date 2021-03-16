@@ -1,15 +1,12 @@
-import server.ServerData;
-import server.ServerMap;
+import server.IServerMap;
 
-import java.net.DatagramSocket;
-import java.net.InetAddress;
 
 public class Cleaner implements Runnable {
-    private ServerMap serverMap;
+    private IServerMap serverMap;
     private int periodMillis;
 
 
-    public Cleaner(ServerMap serverMap, int periodMillis) {
+    public Cleaner(IServerMap serverMap, int periodMillis) {
         this.serverMap = serverMap;
         this.periodMillis = periodMillis;
     }

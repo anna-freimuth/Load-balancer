@@ -23,7 +23,8 @@ public class TcpGatewayListener implements Runnable {
             e.printStackTrace();
             return;
         }
-        ExecutorService executor = Executors.newWorkStealingPool(20);
+
+        ExecutorService executor = Executors.newFixedThreadPool(10);
 
         while (true) {
             Socket socket = null;

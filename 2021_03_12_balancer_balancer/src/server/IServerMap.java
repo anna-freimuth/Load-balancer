@@ -2,9 +2,9 @@ package server;
 
 public interface IServerMap {
     /**
-     * update information about server, the more tasks the server has, the higher the load
+     * update information about server
       */
-    void update(ServerData serverData, int load);
+    void update(ServerData serverData);
 
     /**
      *
